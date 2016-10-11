@@ -25,7 +25,7 @@ Configuration:
         symbol_table = /
         symbol_code = _
         # The string in comment will be appended to the end of the packet.
-        comment = SBARC U2k WX station
+        comment = ''
 
 Example of integration in the aprx configuration:
     <beacon>
