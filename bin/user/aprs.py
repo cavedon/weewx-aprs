@@ -68,10 +68,10 @@ class APRS(weewx.engine.StdService):
         else:
             data.append('%s...' % self._wind_direction_marker)
 
-        if record.get('wind_average') is not None:
+        if record.get('windSpeed') is not None:
             # Sustained one-minute wind speed (in mph)
             data.append('%s%03.f' % (self._wind_speed_marker,
-                                     record['wind_average']))
+                                     record['windSpeed']))
         else:
             data.append('%s...' % self._wind_speed_marker)
 
