@@ -1,4 +1,4 @@
-from setup import ExtensionInstaller
+from weecfg.extension import ExtensionInstaller
 
 
 def loader():
