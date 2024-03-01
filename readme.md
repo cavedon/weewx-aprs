@@ -28,6 +28,7 @@ StdArchive.archive_interval seconds.
         comment = ''
         # If Acurite 01036, put accurite
         station_model = default
+        report_luminosity = 0
 
 # Configuration  [APRX]:
 #### Add these to your aprx.conf - likely in /etc/
