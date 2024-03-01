@@ -1,4 +1,4 @@
-from setup import ExtensionInstaller
+from weecfg.extension import ExtensionInstaller
 
 
 def loader():
@@ -8,8 +8,8 @@ def loader():
 class APRSInstaller(ExtensionInstaller):
     def __init__(self):
         super(APRSInstaller, self).__init__(
-            version='0.1',
-            name='aprs',
+            version='0.2',
+            name='aprs-formatter',
             description='Write archive data in APRS positionless format.',
             author='Ludovico Cavedon (K6LUD)',
             author_email='ludovico.cavedon@gmail.com',
@@ -21,6 +21,8 @@ class APRSInstaller(ExtensionInstaller):
                     'symbol_table': '/',
                     'symbol_code': '_',
                     'comment': '',
+                    'station_model':'default',
+                    'report_luminosity':0,
                 },
             },
             files=[('bin/user', ['bin/user/aprs.py'])]
