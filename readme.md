@@ -1,5 +1,5 @@
 # aprs - weewx extension for generating APRS-compliant packets
-![alt text](aprs.png)![alt text](handshake.png)  ![alt text](weewx.jpg)  
+![alt text](img/aprs.png)![alt text](img/handshake.png)  ![alt text](img/weewx.jpg)  
 This [weeWX](https://www.weewx.com/) extension allows the generation of APRS-compliant packets
 containing weather information collected by weewx.
 This extension was written for the purpose of easy integration with [aprx](http://thelifeofkenneth.com/aprx/).
@@ -43,7 +43,7 @@ syncronized, so aprx may send out the same packet twice or miss one from time
 to time.
 
 ### When all is said and done, the packet should look something like this.
-![alt text](image.png)
+![alt text](/img/image.png)
 
 # How is the weather data coded into the data packet?  
 
