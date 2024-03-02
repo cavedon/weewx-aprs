@@ -21,8 +21,8 @@ class APRSInstaller(ExtensionInstaller):
                     'symbol_table': '/',
                     'symbol_code': '_',
                     'comment': '',
-                    'station_model':'default',
-                    'report_luminosity':0,
+                    'station_model': 'default',
+                    'report_luminosity': 0,
                 },
             },
             files=[('bin/user', ['bin/user/aprs.py'])]
