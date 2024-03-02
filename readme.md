@@ -75,7 +75,7 @@ GW1000/GW1100
 # Troubleshooting
 > ****  ModuleNotFoundError: No module named 'user.aprs'  
 
-Weectl 
+reinstall the plugin
 
 ---
 http://wxqa.com/faq.html  
