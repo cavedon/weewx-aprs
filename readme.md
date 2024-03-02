@@ -62,6 +62,7 @@ When you look at examples of APRS position weather packets [here](http://wxqa.co
 - The letter "P" followed by 3 numbers represents the amount of rain in hundredths of inches that fell since local midnight. - P000
 - The letter "b" followed by 5 numbers represents the barometric pressure in tenths of a millibar. - b10322 
 - The letter "h" followed by 2 numbers represents the relative humidity in percent, where "h00" implies 100% RH. - h75
+- The letter "L" followed by 2-5 numbers represents  watts/meter squared. Conversion is not yet well understood by me.
 >So this can be read as: The wind is blowing 120 degrees, the average wind speed is 5mph, the peak wind speed is 10mph, the temperature is 21 degrees, it has rained 0 inches the last hour, it has rained 0 inches the last 24 hours, it has rained 0 inches since local midnight, the pressure is 10322mb, the humidity is 75%
 
 The first four fields (wind direction, wind speed, temperature and gust) are required, in that order, and if a particular measurement is not present, the three numbers should be replaced by "..." to indicate no data available. [Solar radiation data](http://wxqa.com/lum_search.htm) can also be coded into the data packet.
