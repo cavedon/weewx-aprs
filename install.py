@@ -25,5 +25,5 @@ class APRSInstaller(ExtensionInstaller):
                     'report_luminosity': 0,
                 },
             },
-            files=[('bin/user', ['bin/user/aprs.py'])]
+            files=[('bin/user', ['bin/user/aprs-formatter.py'])]
         )
