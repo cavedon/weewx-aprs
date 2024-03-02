@@ -9,7 +9,7 @@ StdArchive.archive_interval seconds.
 ### This is intended to work with the latest weeWX version
 
 # Installation:
-> weectl extension install https://github.com/savagebread/weewx-aprs/archive/refs/tags/v.02.zip
+> weectl extension install https://github.com/savagebread/weewx-aprs/archive/refs/tags/v0.2.zip
 
 # Configuration [WeeWX]: 
 #### Add these to your weewx.conf - likely in /etc/weewx/
