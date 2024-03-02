@@ -158,7 +158,6 @@ class APRS(weewx.engine.StdService):
                 #Luminosity in watts per meter ^2, 3 places
                 try:
                     lumen = record['luminosity']
-                    logging.info("weewx-aprs-packet-formatter - %s" % lumen)
                     data.append('L%03.u' % lumen)
                 except Exception as e:
                     logging.error("weewx-aprs-packet-formatter - luminosity - %s" % (e))
