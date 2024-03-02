@@ -13,7 +13,7 @@ class APRSInstaller(ExtensionInstaller):
             description='Write archive data in APRS positionless format.',
             author='Ludovico Cavedon (K6LUD)',
             author_email='ludovico.cavedon@gmail.com',
-            process_services='user.aprs.APRS',
+            process_services='user.aprs-formatter.APRS',
             config={
                 'APRS': {
                     'output_filename': '/dev/shm/aprs.pkt',

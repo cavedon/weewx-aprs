@@ -6,8 +6,10 @@ This extension was written for the purpose of easy integration with [aprx](http:
 When this extension is enabled, weewx will generate a new APRS packet every
 StdArchive.archive_interval seconds.
 
+### This is intended to work with the latest weeWX version
+
 # Installation:
-> wee_extension --install aprs.tar.gz
+> weectl extension install https://github.com/savagebread/weewx-aprs/archive/refs/tags/v.02.zip
 
 # Configuration [WeeWX]: 
 #### Add these to your weewx.conf - likely in /etc/weewx/
@@ -69,6 +71,11 @@ The first four fields (wind direction, wind speed, temperature and gust) are req
 
 # Tested on:
 GW1000/GW1100
+
+# Troubleshooting
+> ****  ModuleNotFoundError: No module named 'user.aprs'  
+
+Weectl 
 
 ---
 http://wxqa.com/faq.html  
