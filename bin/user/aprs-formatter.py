@@ -86,7 +86,7 @@ class APRS(weewx.engine.StdService):
                 logging.error("weewx-aprs-packet-formatter - %s %s %s" % (e, self._wind_direction_marker,
                                     wind_dir))
         else:
-            data.append('%s...' % self._wind_direction_marker)
+            data.append('%s000' % self._wind_direction_marker)
 
         if record.get('windSpeed') is not None:
             try: 
@@ -124,12 +124,12 @@ class APRS(weewx.engine.StdService):
             except Exception as e:
                 logging.error("weewx-aprs-packet-formatter - rainRate - %s %s %s"% (e, record['rainRate'] * 100))
 
-        if record.get('daily_rain') is not None:
+        if record.get('rain') is not None:
             # Rainfall (in hundredths of an inch) since midnight
             try: 
-                data.append('P%03.f' % (record['dayRain'] * 100))
+                data.append('P%03.f' % (record['rain'] * 100))
             except Exception as e:
-                logging.error("weewx-aprs-packet-formatter - dayrain - %s %s %s" % (e, record['dayRain'] * 100))
+                logging.error("weewx-aprs-packet-formatter - dayrain - %s %s %s" % (e, record['rain'] * 100))
 
         if record.get('outHumidity') is not None:
             # Humidity (in %. 00 = 100%)
