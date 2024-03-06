@@ -124,12 +124,12 @@ class APRS(weewx.engine.StdService):
             except Exception as e:
                 logging.error("weewx-aprs-packet-formatter - rainRate - %s %s %s"% (e, record['rainRate'] * 100))
                 
-        if record.get('rain24') is not None:
+        if record.get('rain24h') is not None:
             # Rainfall (in hundredths of an inch) in last 24 hours
             try: 
-                data.append('p%03.f' % (record['rain24'] * 100))
+                data.append('p%03.f' % (record['rain24h'] * 100))
             except Exception as e:
-                logging.error("weewx-aprs-packet-formatter - dayrain - %s %s %s" % (e, record['rain24'] * 100))
+                logging.error("weewx-aprs-packet-formatter - dayrain - %s %s %s" % (e, record['rain24h'] * 100))
 
         if record.get('dayRain') is not None:
             # Rainfall (in hundredths of an inch) since midnight
